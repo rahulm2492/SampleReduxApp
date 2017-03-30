@@ -1,0 +1,4 @@
+export const LOAD_VIDEO_SUCCESS = 'LOAD_VIDEO_SUCCESS';
+export const LOAD_HOBBIES_SUCCESS = 'LOAD_HOBBIES_SUCCESS';
+export const LOG_IN_SUCCESS = 'LOG_IN_SUCCESS';
+export const LOG_OUT = 'LOG_OUT';
