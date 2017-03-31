@@ -31,11 +31,11 @@ VideosPage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
-  if (state.videos.length > 0) {
+
     return {
-      cats: state.videos
+      videos: state.videos
     };
-  }
+  
 }
 
 function mapDispatchToProps(dispatch) {

@@ -6,9 +6,7 @@ import {Link} from 'react-router';
 const CatList = ({videos}) => {
   return (
       <ul className="list-group">
-        {videos.map(video =>
-           <li className="list-group-item" key={video.id}><Link to={'/videos/' + video.id}>{video.name}</Link></li>
-        )}
+        <VideoListItem/>
       </ul>
   );
 };

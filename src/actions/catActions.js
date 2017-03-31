@@ -10,7 +10,7 @@ export function loadCats() {
   // make async call to api, handle promise, dispatch action when promise is resolved
   return function(dispatch) {
     return catApi.getAllCats().then(videos => {
-      dispatch(loadCatsSuccess([]));
+      dispatch(loadCatsSuccess(videos));
     }).catch(error => {
       throw(error);
     });

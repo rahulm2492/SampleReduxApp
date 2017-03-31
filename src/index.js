@@ -12,7 +12,6 @@ import {loadHobbies} from './actions/hobbyActions';
 const store = configureStore();
 
 store.dispatch(loadCats());
-store.dispatch(loadHobbies());
 
 render(
   <Provider store={store}>

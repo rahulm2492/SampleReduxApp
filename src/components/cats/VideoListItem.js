@@ -3,7 +3,14 @@ import {Link} from 'react-router';
 
 const VideoListItem = ({videos}) => {
   return (
-    <li className="list-group-item"><Link to={'/videos/' + videos.id}>{videos.name}</Link></li>
+    <iframe
+      title='YouTube video player'
+      width='340'
+      height='390'
+      src="https://www.youtube.com/embed/V6sw_JlqO2w"
+      frameBorder='0'
+      allowFullScreen>
+    </iframe>
   );
 };
 
