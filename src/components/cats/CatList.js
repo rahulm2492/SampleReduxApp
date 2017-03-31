@@ -4,9 +4,11 @@ import {Link} from 'react-router';
 
 
 const CatList = ({videos}) => {
+  const list = videos.map(function(video){
+     return <VideoListItem video={video} />})
   return (
       <ul className="list-group">
-        <VideoListItem/>
+        {list}
       </ul>
   );
 };
